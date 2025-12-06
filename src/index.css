@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.btnNumber{
+  @apply  p-5 rounded-xl text-lg font-semibold ;
+}
+.btnOperation{
+  @apply bg-blue-500 p-5 rounded-xl text-lg font-semibold ;
+}
+.btnDelete{
+    
+  @apply bg-orange-300 p-5 rounded-xl text-lg font-semibold ;
+}
+@custom-variant dark (&:where(.dark, .dark *));
