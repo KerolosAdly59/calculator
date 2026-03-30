@@ -1,73 +1,107 @@
-# React + TypeScript + Vite
+# 🧮 Calculator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive **Calculator Web Application** built with **React**.
+This project demonstrates building a simple but interactive web application with clean UI and accurate functionality.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+👉 https://calculator-nine-liard-40.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🎯 Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This project is a functional calculator that allows users to perform arithmetic operations in a user-friendly interface.
+Built using **React**, it uses component-based architecture and state management with hooks for a smooth and interactive experience.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ✨ Key Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* ✅ Basic arithmetic operations: addition, subtraction, multiplication, division
+* ✅ Clear and reset functionality
+* ✅ Responsive UI for mobile, tablet, and desktop
+* ✅ Fast and interactive user experience
+
+---
+
+## 🛠️ Tech Stack
+
+* ⚛️ React
+* 🎨 Tailwind CSS
+* 🧠 React Hooks (useState, useEffect)
+* 🚀 Vercel (Deployment)
+
+---
+
+## 📂 Project Structure
+
+```bash id="p8mz3t"
+src/
+│── components/      # Calculator buttons & display
+│── App.jsx          # Main calculator logic
+│── index.jsx        # React DOM render
+│── styles/          # Tailwind global styles
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Installation & Setup
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Clone the repository:
+
+```bash id="y4k7vb"
+git clone https://github.com/KerolosAdly59/calculator.git
 ```
+
+2. Navigate to project folder:
+
+```bash id="k9t4vr"
+cd calculator
+```
+
+3. Install dependencies:
+
+```bash id="v5n3qb"
+npm install
+```
+
+4. Run the development server:
+
+```bash id="m3l9pf"
+npm start
+```
+
+---
+
+## 📈 Future Improvements
+
+* 🖥️ Add scientific calculator functions
+* 🎨 Dark mode toggle
+* 🔢 Keyboard input support
+* 🧪 Unit tests for calculator logic
+* 🌍 Multi-language support
+
+---
+
+## 🧠 What This Project Demonstrates
+
+* Building interactive applications with React
+* Component-based architecture
+* State management with React Hooks
+* Responsive UI design using Tailwind CSS
+
+---
+
+## 👨‍💻 Author
+
+Developed by **Kerolos Adly**
+🔗 GitHub: https://github.com/KerolosAdly59
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
